@@ -1,0 +1,22 @@
+* Install
+    npm install -g typescript
+
+* Check
+    tsc -v
+    tsc.cmd -v
+
+* Compile
+    tsc <file name>.ts
+    tsc.cmd <file name>.ts
+
+    tsc.cmd (from root, after changing the config file)
+
+* On watch mode (auto compile)
+    tsc --watch <file name>
+    tsc.cmd -watch <file name>
+
+    tsc.cmd --watch (from root, after changing the config file)
+
+* Configuration file
+    tsc --init
+    tsc.cmd --init
