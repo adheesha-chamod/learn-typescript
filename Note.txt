@@ -1,3 +1,7 @@
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+Get-ExecutionPolicy
+
+
 * Install
     npm install -g typescript
 
