@@ -73,7 +73,7 @@ function message(msg: string | number): void {
 interface UserInterface {
   readonly id: number; // can't change after defining
   name: string;
-  age?: number; // optional
+  age?: number; // optional or age!: number; <-- non-null assertion operator (value will ba assigned later)
 }
 
 const user2: UserInterface = {
