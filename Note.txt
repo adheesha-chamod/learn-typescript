@@ -1,26 +1,22 @@
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-Get-ExecutionPolicy
+* This has to be execute only once in powershell
+    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+    Get-ExecutionPolicy
 
-
-* Install
+* Install typescript globally
     npm install -g typescript
 
-* Check
+* Check version
     tsc -v
-    tsc.cmd -v
+
+* Install configuration file
+    tsc --init
 
 * Compile
     tsc <file name>.ts
-    tsc.cmd <file name>.ts
-
-    tsc.cmd (from root, after changing the config file)
+    - or -
+    tsc(from root, after changing the config file)
 
 * On watch mode (auto compile)
-    tsc --watch <file name>
-    tsc.cmd -watch <file name>
-
-    tsc.cmd --watch (from root, after changing the config file)
-
-* Configuration file
-    tsc --init
-    tsc.cmd --init
+    tsc --watch <file name>.ts
+    - or -
+    tsc --watch (from root, after changing the config file)
