@@ -8,7 +8,7 @@
 * Check version
     tsc -v
 
-* Install configuration file
+* Install configuration file 
     tsc --init
 
 * Compile
