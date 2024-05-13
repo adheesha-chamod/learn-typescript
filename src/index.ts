@@ -93,11 +93,117 @@
 
 // array of tuples
 
-let tupAr1: [number, string][];
-tupAr1 = [
-  [1, "One"],
-  [2, "Two"],
-  [3, "Three"],
-];
-console.log("tupAr1:", tupAr1);
-console.log("Type of tupAr1:", typeof tupAr1);
+// let tupAr1: [number, string][];
+// tupAr1 = [
+//   [1, "One"],
+//   [2, "Two"],
+//   [3, "Three"],
+// ];
+// console.log("tupAr1:", tupAr1);
+// console.log("Type of tupAr1:", typeof tupAr1);
+
+//=======================================================
+
+/* Unions */
+
+// if we want to allow multiple types for a variable
+
+// let un1: number | string;
+
+// un1 = 2024;
+// console.log("un1:", un1, "and its type:", typeof un1);
+
+// un1 = "UCSC";
+// console.log("un1:", un1, "and its type:", typeof un1);
+
+// // un1 = true;     // error
+
+//=======================================================
+
+/* Enums */
+
+// allows us to define a set of named constants either numeric or string
+
+// enum Direction1 {
+//   UP,
+//   DOWN,
+//   LEFT,
+//   RIGHT
+// }
+
+// enum Direction2 {
+//   UP = 10,
+//   DOWN,
+//   LEFT,
+//   RIGHT
+// }
+
+// enum Direction3 {
+//   UP = "Up",
+//   DOWN = "Down",
+//   LEFT = "Left",
+//   RIGHT = "Right"
+// }
+
+// console.log(Direction1.UP);
+// console.log(Direction2.UP);
+// console.log(Direction3.UP);
+
+// console.log(Direction1.DOWN)
+// console.log(Direction2.DOWN)
+// console.log(Direction3.DOWN)
+
+//=======================================================
+
+/* Objects */
+
+// type User = {
+//   id: number;
+//   name: string;
+//   isAvailable: boolean;
+// };
+
+// const user1: User = {
+//   id: 1,
+//   name: "Adheesha",
+//   isAvailable: true,
+// };
+
+// // const user2: User = {
+// //   id: "E001",
+// //   name: "Saman",
+// //   isAvailable: 1,
+// // };                      // error
+
+// console.log("user1:", user1);
+// console.log("Type of user1:", typeof user1);
+
+// console.log("Id of user1:", user1.id);
+// console.log("Name of user1:", user1.name);
+// console.log("Availability of user1:", user1.isAvailable);
+
+//=======================================================
+
+/* Type Assertion */
+
+// // first way
+// let pid1: any = 100021;
+// console.log("pid1:", pid1);
+// console.log("Type of pid1:", typeof pid1);
+
+// let pid2 = <number>pid1;
+// console.log("pid2:", pid2);
+// console.log("Type of pid2:", typeof pid2);
+
+// // second way
+// let pid3: any = 100022;
+// console.log("pid3:", pid3);
+// console.log("Type of pid3:", typeof pid3);
+
+// let pid4 = pid3 as number;
+// console.log("pid4:", pid4);
+// console.log("Type of pid4:", typeof pid4);
+
+//=======================================================
+
+/* Functions */
