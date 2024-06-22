@@ -20,3 +20,8 @@
     tsc --watch <file name>.ts
     - or -
     tsc --watch (from root, after changing the config file)
+
+* Run (execute these commands from dist folder)
+    node <file name>.js
+    - or -
+    node <file name> (without extension)

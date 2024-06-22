@@ -142,3 +142,65 @@
 // console.log("Type of pid4:", typeof pid4);
 //=======================================================
 /* Functions */
+// function add(a: number, b: number): number {
+//     return a + b;
+// }
+// function printMessage(message: string | number): void {
+//     console.log(message);
+// }
+// console.log("add(10, 20):", add(10, 20));
+// printMessage("Hello");
+// printMessage(12123);
+//=======================================================
+/* Interfaces */
+// // a custom type or a specific structure for an object or a function
+// // define interfaces for objects
+// interface UserInterface {
+//   readonly id: number;
+//   name: string;
+//   isAvailable: boolean;
+//   age ?: number;        // optional property
+// };
+// const user1: UserInterface = {
+//   id: 1,
+//   name: "Adheesha",
+//   isAvailable: true,
+//   age: 25
+// };
+// console.log("user1:", user1);
+// console.log("Type of user1:", typeof user1);
+// // user1.id = 2;       // error
+// const user2: UserInterface = {
+//   id: 2,
+//   name: "Namal",
+//   isAvailable: false,
+// //   age: 28,      // this is optional
+// };
+// console.log("user2:", user2);
+// console.log("Type of user2:", typeof user2);
+// // interfaces can't use with primitive types and unions
+// // but types can use with primitive types and unions
+// // ------------------------------------------------------
+// // define interfaces for functions
+// interface mathFunction {
+//     (a: number, b: number): number;
+// }
+// const add: mathFunction = (a: number, b: number): number => {
+//     return a + b;
+// }
+// const sub: mathFunction = (a: number, b: number): number => {
+//     return a - b;
+// }
+// const mul: mathFunction = (a: number, b: number): number => {
+//     return a * b;
+// }
+// const div: mathFunction = (a: number, b: number): number => {
+//     if (b === 0) {
+//         throw new Error("Can't divide by zero");
+//     }
+//     return a / b;
+// }
+// console.log("div(10, 2):", div(10, 2));
+// console.log("div(10, 0):", div(10, 0));
+//=======================================================
+/* Classes */ 
