@@ -294,3 +294,62 @@
 //=======================================================
 
 /* Classes */
+
+// // in ts, js, multiple constructor implementations are not allowed
+// // access modifiers -> public, private & protected
+// // pu default, attributes and methods are public
+
+// interface PersonInterface {
+// 	id: number;
+// 	name: string;
+
+// 	// toString(): string;		// private methods should not include in the respective interface -> include only public once
+// 	register(): void;
+// }
+
+// // including interface is optional
+// class Person implements PersonInterface {
+//   id: number;
+//   name: string;
+
+//   constructor(id: number, name: string) {
+//     this.id = id;
+//     this.name = name;
+//   }
+
+//   private toString(): string {
+// 	return `${this.id} : ${this.name}`
+//   }
+
+//   register(): void {
+// 	console.log(`User => ${this.toString()} registered`);
+//   }
+// }
+
+// const person1 = new Person(1, "Brad");
+// const person2 = new Person(2, "Mike");
+
+// console.log(person1);
+// console.log(person2);
+
+// console.log(person1.register());
+// console.log(person2.register());
+
+// // ------------------------------------------------------
+
+// // inheritance
+
+// class Employee extends Person {
+// 	position: string;
+
+// 	constructor(id: number, name: string, position: string) {
+// 		super(id, name);
+// 		this.position = position;
+// 	}
+// }
+
+// const employee = new Employee(3, "Sandun", "SSE");
+// console.log(employee.register());
+
+//=======================================================
+
