@@ -246,3 +246,12 @@
 // const employee = new Employee(3, "Sandun", "SSE");
 // console.log(employee.register());
 //=======================================================
+// Generics
+// reusable components
+function getArray(items) {
+    return new Array().concat(items);
+}
+const numArray = getArray([1, 2, 3, 4, 5]);
+const stringArray = getArray(["Mike", "John", "Jenny"]);
+console.log(numArray);
+console.log(stringArray);

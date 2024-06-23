@@ -353,3 +353,17 @@
 
 //=======================================================
 
+// Generics
+
+// reusable components
+
+function getArray<T>(items: T[]): T[] {
+	return new Array().concat(items);
+}
+
+const numArray: number[] = getArray<number>([1, 2, 3, 4, 5]);
+const stringArray: string[] = getArray<string>(["Mike", "John", "Jenny"]);
+
+console.log(numArray);
+console.log(stringArray);
+
