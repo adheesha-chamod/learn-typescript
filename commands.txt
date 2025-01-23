@@ -1,0 +1,14 @@
+install typescript:
+npm i -g typescript
+
+check typescript compiler version:
+tsc -v
+
+compile typescript file:
+tsc <filename.ts>
+
+compile all typescript files in a directory:
+tsc
+
+init typescript project:
+tsc --init
