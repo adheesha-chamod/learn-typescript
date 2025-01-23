@@ -7,8 +7,8 @@ tsc -v
 compile typescript file:
 tsc <filename.ts>
 
-compile all typescript files in a directory:
-tsc
-
 init typescript project:
 tsc --init
+
+compile all typescript files in a directory:
+tsc
