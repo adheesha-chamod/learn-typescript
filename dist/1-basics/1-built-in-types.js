@@ -1,0 +1,15 @@
+"use strict";
+let n1 = 123456;
+let s1 = "Hello world!";
+let b1 = false;
+n1 = 123;
+console.log(typeof n1);
+console.log(typeof s1);
+console.log(typeof b1);
+let n2 = 456;
+let s2 = "Hello world!";
+let b2 = false;
+n2 = 4567.12;
+console.log(typeof n2);
+console.log(typeof s2);
+console.log(typeof b2);
