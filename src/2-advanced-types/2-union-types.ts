@@ -1,4 +1,4 @@
-function kgtoLbs(weight: number | string): number {
+function kgToLbs(weight: number | string): number {
   // narrowing
   if (typeof weight === "number") {
     return weight * 2.2;
@@ -7,5 +7,5 @@ function kgtoLbs(weight: number | string): number {
   return parseInt(weight) * 2.2;
 }
 
-console.log(kgtoLbs(10));
-console.log(kgtoLbs("10kg"));
+console.log(kgToLbs(10));
+console.log(kgToLbs("10kg"));

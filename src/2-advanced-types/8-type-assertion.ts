@@ -9,5 +9,6 @@ let email2 = document.getElementById("email") as HTMLInputElement;
 console.log(email2.value);
 
 // type assertion (another way)
+// no type converstion happening under the hood
 let email3 = <HTMLInputElement>document.getElementById("email");
 console.log(email3.value);

@@ -1,5 +1,3 @@
-
-
 // this function never returns
 function processEvents(): never {
   while (true) {
@@ -8,11 +6,11 @@ function processEvents(): never {
 }
 
 // this function never returns, only throwing exception
-function refect(message: string): never {
+function reject(message: string): never {
   throw new Error("Error:" + message);
 }
 
 // processEvents();
-// // refect("error");
+// // reject("error");
 
 console.log("Hello world!"); // unrechable code, since previous method call never stops
